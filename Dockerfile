@@ -2,7 +2,7 @@ FROM node:8-alpine
 
 MAINTAINER blackholegalaxy
 
-ENV RANCHER_CLI_VERSION=0.6.4
+ENV RANCHER_CLI_VERSION=0.6.5
 
 RUN apk add --no-cache --update --virtual .build-deps \
         curl \
