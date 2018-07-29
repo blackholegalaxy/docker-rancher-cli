@@ -2,7 +2,7 @@ FROM node:8-alpine
 
 LABEL maintainer="blackholegalaxy"
 
-ENV RANCHER_CLI_VERSION=v2.0.1
+ENV RANCHER_CLI_VERSION=v2.0.3
 
 RUN apk add --no-cache --update --virtual .build-deps \
     curl \
