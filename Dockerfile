@@ -2,8 +2,8 @@ FROM node:8-alpine
 
 LABEL maintainer="blackholegalaxy"
 
-ENV RANCHER_CLI_VERSION=v2.0.4-rc2
-ENV KUBE_CTL_VERSION=v1.11.1
+ENV RANCHER_CLI_VERSION=v2.0.4
+ENV KUBE_CTL_VERSION=v1.11.2
 
 RUN apk add --no-cache --update --virtual .build-deps \
     curl ca-certificates \
