@@ -7,7 +7,7 @@ ENV KUBE_CTL_VERSION=v1.12.2
 
 RUN apk add --no-cache --update --virtual .build-deps \
     curl ca-certificates \
-    && curl -L "https://releases.rancher.com/cli/${RANCHER_CLI_VERSION}/rancher-linux-amd64-${RANCHER_CLI_VERSION}.tar.gz" | tar -xvzf - \
+    && curl -L "https://github.com/rancher/cli/releases/download/${RANCHER_CLI_VERSION}/rancher-linux-amd64-${RANCHER_CLI_VERSION}.tar.gzfix" | tar -xvzf - \
     && mv "rancher-${RANCHER_CLI_VERSION}/rancher" /usr/local/bin/rancher \
     && chmod +x /usr/local/bin/rancher \
     && curl -LO "https://storage.googleapis.com/kubernetes-release/release/${KUBE_CTL_VERSION}/bin/linux/amd64/kubectl" \
