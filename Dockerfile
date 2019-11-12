@@ -2,7 +2,7 @@ FROM node:10-alpine
 
 LABEL maintainer="blackholegalaxy"
 
-ENV RANCHER_CLI_VERSION=v2.3.1
+ENV RANCHER_CLI_VERSION=v2.3.2
 ENV KUBE_CTL_VERSION=v1.16.2
 
 RUN apk add --no-cache --update --virtual .build-deps \
